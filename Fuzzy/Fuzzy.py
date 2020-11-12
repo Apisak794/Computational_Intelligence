@@ -87,6 +87,14 @@ aggregated = np.fmax(option_activation_fill, np.fmax(option_activation_nothing,o
 option = fuzz.defuzz(x_option, aggregated, 'centroid')
 option_activation = fuzz.interp_membership(x_option, aggregated, option)  # for plot
 
+print('ความต้องการทิ้งขยะ = ' + np.str(option) + ' % ')
+if(option > 60):
+    print('ทิ้งขยะออกจากถัง')
+elif(option > 54):
+    print('ไม่ทำอะไร')
+else:
+    print('เติมขยะเข้าถัง')
+    
 # Visualize this
 fig, ax0 = plt.subplots(figsize=(8, 3))
 
