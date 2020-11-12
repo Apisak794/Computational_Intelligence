@@ -44,7 +44,7 @@ ax2.plot(x_option, option_fritter, 'r', linewidth=1.5, label='fritter')
 ax2.set_title('option')
 ax2.legend()
 
-garbage_weight = 3
+garbage_weight = 7
 garbage_number = 3
 
 weight_level_light = fuzz.interp_membership(x_weight, weight_light, garbage_weight)
