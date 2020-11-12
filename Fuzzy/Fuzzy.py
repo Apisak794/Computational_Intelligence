@@ -87,6 +87,7 @@ aggregated = np.fmax(option_activation_fill, np.fmax(option_activation_nothing,o
 option = fuzz.defuzz(x_option, aggregated, 'centroid')
 option_activation = fuzz.interp_membership(x_option, aggregated, option)  # for plot
 
+# fritter > 60 , 54 < nothing < 60 ,fill < 54
 print('ความต้องการทิ้งขยะ = ' + np.str(option) + ' % ')
 if(option > 60):
     print('ทิ้งขยะออกจากถัง')
