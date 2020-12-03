@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 x_weight = np.arange(0, 11, 1)
 x_number = np.arange(0, 11, 1)
 x_option  = np.arange(0, 101, 1)
-
+ 
 # Generate fuzzy membership functions
 weight_light = fuzz.trimf(x_weight, [0, 0, 2])
 weight_medium = fuzz.trimf(x_weight, [0, 10, 10])
